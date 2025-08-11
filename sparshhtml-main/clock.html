@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analog Clock</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    overflow-y: hidden;
+  }
+  
+  #clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #202020 20%, #111111 80%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border: 5px solid #333;
+  }
+  
+  .hand {
+    position: absolute;
+    background-color: #fff;
+    transform-origin: 50% 100%;
+    border-radius: 5px;
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  #hour {
+    width: 8px;
+    height: 60px;
+    top: 30%;
+    z-index: 3;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  #minute {
+    width: 6px;
+    height: 90px;
+    top: 20%;
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  #second {
+    width: 4px;
+    height: 120px;
+    top: 10%;
+    background-color: #f44336;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(255, 69, 77, 0.8);
+  }
+  
+  #center-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+  }
+</style>
+</head>
+<body>
+
+<div id="clock">
+  <div id="hour" class="hand"></div>
+  <div id="minute" class="hand"></div>
+  <div id="second" class="hand"></div>
+  <div id="center-circle"></div>
+</div>
+
+<script>
+function updateClock() {
+  var now = new Date();
+  var hour = now.getHours();
+  var minute = now.getMinutes();
+  var second = now.getSeconds();
+
+  var hourDegree = (hour % 12) * 30 + (minute / 60) * 30;
+  var minuteDegree = minute * 6 + (second / 60) * 6;
+  var secondDegree = second * 6;
+
+  document.getElementById('hour').style.transform = `rotate(${hourDegree}deg)`;
+  document.getElementById('minute').style.transform = `rotate(${minuteDegree}deg)`;
+  document.getElementById('second').style.transform = `rotate(${secondDegree}deg)`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initial call to display the clock
+updateClock();
+</script>
+
+</body>
+</html>
