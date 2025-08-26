@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAIN❖CHESS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+           background-color: magenta;
+            font-family: monospace;
+        }
+
+        .ms {
+            border: 2px solid #000;
+            background-color: red;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .flex_chess,
+        .Table_Chess,
+        .Grid_Chess {
+            background-color: #FF8080;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #000;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .flex_chess:hover,
+        .Table_Chess:hover,
+        .Grid_Chess:hover {
+            background-color: lightgreen;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        </style>
+</head>
+
+<body>
+
+    <div class="ms">
+        <div class="flex_chess">
+            <h1><a href="./chess.html">Flex❖Chess</a></h1>
+        </div>
+
+        <div class="Table_Chess">
+            <h1><a href="./tableChess.html">Table❖Chess</a></h1>
+        </div>
+
+        <div class="Grid_Chess">
+            <h1><a href="./chessgrid.html">Grid❖Chess</a></h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>CHESS GRID</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-image: url(./my_image/babaab.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      margin: 30px 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 2px;
+      width: 90vmin;
+      height: 90vmin;
+      max-width: 100vw;
+      max-height: 100vw;
+    }
+
+    .grid-item,
+    .grid-two {
+      aspect-ratio: 1 / 1;
+    }
+
+    .grid-item {
+      background-color: darkorange;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+    }
+
+    .grid-two {
+      background-color: black;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <h1>CHESS 😎</h1>
+
+  <div class="grid-container">
+    <!-- 8x8 board = 64 squares -->
+    <!-- You had a checkerboard pattern, so repeat alternating cells -->
+    <!-- Row 1 -->
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+
+    <!-- Row 2 -->
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+
+    <!-- Row 3 -->
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+
+    <!-- Row 4 -->
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+
+    <!-- Row 5 -->
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+
+    <!-- Row 6 -->
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+
+    <!-- Row 7 -->
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+
+    <!-- Row 8 -->
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+    <div class="grid-two"></div>
+    <div class="grid-item"></div>
+  </div>
+</body>
+
+</html>

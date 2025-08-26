@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets of the Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0c10;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #66fcf1;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.planet {
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planet:hover {
+    transform: scale(1.05);
+}
+
+.planet img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Planets of the Solar System</h1>
+    </header>
+
+    <main>
+        <section class="planet">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-knVICDnnJREPlHo8rqBPHWT0R5h4n8v_A&s" alt="Mercury">
+            <h2>Mercury</h2>
+            <p>Mercury is the smallest and closest planet to the Sun.</p>
+        </section>
+
+        <section class="planet">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3oMVsoR3mL6FfSQ9auuuTOMPbHDFn4e2Fbac8cobYVBecNfNjJuysZUL4XGx7Sliu-Zs&usqp=CAU" alt="Venus">
+            <h2>Venus</h2>
+            <p>Venus is the second planet from the Sun and has a thick, toxic atmosphere.</p>
+        </section>
+
+        <section class="planet">
+            <img src="data:image/jpeg;base64,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" alt="Earth">
+            <h2>Earth</h2>
+            <p>Earth is the third planet and the only one known to support life.</p>
+        </section>
+
+        <section class="planet">
+            <img src="data:image/jpeg;base64,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" alt="Mars">
+            <h2>Mars</h2>
+            <p>Mars is called the Red Planet and may have once had water.</p>
+        </section>
+
+        <section class="planet">
+            <img src="data:image/jpeg;base64,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" alt="Jupiter">
+            <h2>Jupiter</h2>
+            <p>Jupiter is the largest planet, with a Great Red Spot storm.</p>
+        </section>
+
+        <section class="planet">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEN8P0jqglxkBztJk0NRDuu7B_T_-8ZDtRg&s" alt="Saturn">
+            <h2>Saturn</h2>
+            <p>Saturn is famous for its beautiful ring system.</p>
+        </section>
+
+        <section class="planet">
+            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/p/i/a/0/PIA01492-1.jpg?w=2188&h=2185&fit=clip&crop=faces%2Cfocalpoint" alt="Uranus">
+            <h2>Uranus</h2>
+            <p>Uranus rotates on its side and appears pale blue due to methane.</p>
+        </section>
+
+        <section class="planet">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/048/616/412/small_2x/mystery-neptune-deep-blue-color-and-faint-rings-background-and-nature-free-photo.jpg" alt="Neptune">
+            <h2>Neptune</h2>
+            <p>Neptune is deep blue and has the fastest winds in the solar system.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Planet Solar System</p>
+    </footer>
+</body>
+</html>
