@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .maincontainer {
+                background-color: aquamarine;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 10px;
+
+            }
+            .box1{
+                background-color: blueviolet;
+               
+                align-self:flex-end;
+                justify-self: center;
+            }
+            .box2{
+                background-color: yellowgreen;
+                
+             
+            }
+            .box3{
+                background-color: tomato;
+                
+                
+            }
+            .inner{ height: 100px;
+            width: 150px;
+        margin: 2px;}
+        .bigbox{
+            height: 350px;
+            width: 400px;
+            background-color: whitesmoke;
+            align-self: flex-start;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="bigbox"></div>
+            <div>
+                <div class="box1 inner"></div>
+            <div  class="box2 inner"></div>
+            <div  class="box3 inner"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
