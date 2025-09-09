@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>4-Car CSS Race</title>
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+
+
+
+    body {
+
+      background: #222;
+
+      font-family: sans-serif;
+
+      overflow: hidden;
+
+    }
+
+
+
+
+    h1 {
+
+      text-align: center;
+
+      padding: 20px;
+
+      color: #fff;
+
+    }
+
+
+
+
+    .race-track {
+
+      position: relative;
+
+      width: 100vw;
+
+      height: 450px;
+
+      background: #333;
+
+      border-top: 10px solid #fff;
+
+      border-bottom: 10px solid #fff;
+
+      overflow: hidden;
+
+    }
+
+
+
+
+    .lane-line {
+
+      position: absolute;
+
+      width: 100%;
+
+      height: 4px;
+
+      background: repeating-linear-gradient(
+
+        to right,
+
+        white 0px,
+
+        white 20px,
+
+        transparent 20px,
+
+        transparent 40px
+
+      );
+
+      opacity: 0.3;
+
+    }
+
+
+
+
+    .lane-1 { top: 90px; }
+
+    .lane-2 { top: 170px; }
+
+    .lane-3 { top: 250px; }
+
+    .lane-4 { top: 330px; }
+
+
+
+
+    .finish-line {
+
+      position: absolute;
+
+      right: 40px;
+
+      top: 0;
+
+      height: 100%;
+
+      width: 10px;
+
+      background: repeating-linear-gradient(
+
+        white 0px,
+
+        white 10px,
+
+        black 10px,
+
+        black 20px
+
+      );
+
+      z-index: 10;
+
+    }
+
+
+
+
+    .car {
+
+      position: absolute;
+
+      width: 100px;
+
+      height: 50px;
+
+      background-size: cover;
+
+      animation: drive infinite linear;
+
+    }
+
+
+
+
+    .car1 {
+
+      top: 50px;
+
+      background-image: url('https://i.imgur.com/O7bTjwg.png'); /* red */
+
+      animation-duration: 6s;
+
+    }
+
+
+
+
+    .car2 {
+
+      top: 130px;
+
+      background-image: url('https://i.imgur.com/1hEQUdP.png'); /* blue */
+
+      animation-duration: 5s;
+
+    }
+
+
+
+
+    .car3 {
+
+      top: 210px;
+
+      background-image: url('https://i.imgur.com/EaGzF9z.png'); /* green */
+
+      animation-duration: 7s;
+
+    }
+
+
+
+
+    .car4 {
+
+      top: 290px;
+
+      background-image: url('https://i.imgur.com/3LTXQvl.png'); /* yellow */
+
+      animation-duration: 5.5s;
+
+    }
+
+
+
+
+    @keyframes drive {
+
+      0% {
+
+        left: -120px;
+
+      }
+
+      100% {
+
+        left: 100%;
+
+      }
+
+    }
+
+
+
+
+    .road-lines {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      z-index: 0;
+
+      pointer-events: none;
+
+      background: repeating-linear-gradient(
+
+        to right,
+
+        rgba(255,255,255,0.05) 0px,
+
+        rgba(255,255,255,0.05) 10px,
+
+        transparent 10px,
+
+        transparent 20px
+
+      );
+
+      animation: moveRoad 1s linear infinite;
+
+    }
+
+
+
+
+    @keyframes moveRoad {
+
+      from { background-position-x: 0; }
+
+      to { background-position-x: 20px; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>🏁 4-Car CSS-Only Race</h1>
+
+
+
+
+  <div class="race-track">
+
+    <div class="road-lines"></div>
+
+    <div class="finish-line"></div>
+
+
+
+
+    <!-- Lane lines -->
+
+    <div class="lane-line lane-1"></div>  
+
+    <div class="lane-line lane-2"></div>
+
+    <div class="lane-line lane-3"></div>
+
+    <div class="lane-line lane-4"></div>
+
+
+
+
+    <!-- Cars -->
+
+    <div class="car car1">
+
+      <img src="https://i.giphy.com/1lsjmq31q05hwAShx8.webp" alt="" height="100px" width="200px">
+
+    </div>
+
+    <div class="car car2">
+
+      <img src="https://car-raceing.netlify.app/img/car2.gif" alt=""height="150px" width="200px">
+
+    </div>
+
+    <div class="car car3">
+
+      <img src="https://cranky-kilby-b53e5a.netlify.app/img/car1.gif" alt=""height="150px" width="200px">
+
+    </div>
+
+    
+
+  </div>
+
+</body>
+
+</html>
+

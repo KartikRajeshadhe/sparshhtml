@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background: #333;
+    overflow: hidden;
+  }
+  
+  .road {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #555;
+    overflow: hidden;
+  }
+  
+  .car {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: red;
+    border-radius: 10px;
+    bottom: 0;
+  }
+  
+  .car1 {
+    left: 30%;
+    background: red;
+  }
+  
+  .car2 {
+    left: 60%;
+    background: blue;
+  }
+  

@@ -1,82 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: #2c3e50;
             height: 1000px;
         }
-        .main{
+
+        .main {
             background-color: black;
             display: flex;
         }
-        .coin{
+
+        .coin {
             background-color: black;
             display: flex;
             gap: 280px;
 
         }
-        .box-1{
+
+        .box-1 {
             color: orange;
             font-size: xx-large;
         }
-        header{
+
+        header {
             color: aqua;
-    text-align: center;
-    padding: 20px;
+            text-align: center;
+            padding: 20px;
         }
-        .img{
+
+        .img {
             text-align: center;
             height: 250px;
             width: 250px;
         }
-        button{
+
+        button {
             font-size: xx-large;
             color: orange;
             background-color: black;
         }
+
+        .project {
+            background-color: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+         
+        center{
+            display: flex;
+            flex-direction:  ro ;
+        }
+        .main-cointainer{
+            display: flex;    
+        gap: 200px;    }
     </style>
 </head>
+
 <body>
     <div class="main">
         <div class="coin">
-            <div class="box-1" >Home </div>
+            <div class="box-1">Home </div>
             <div class="box-1">About</div>
             <div class="box-1">Project</div>
             <div class="box-1">Contact</div>
         </div>
     </div>
     <header>
-    <h1>Hiii I Am Kartik Adhe</h1>
-    <h1>I am Full Stack Devloper</h1>
-    <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg"controls alt="">
+        <h1>Hiii I Am Kartik Adhe</h1>
+        <h1>I am Full Stack Devloper</h1>
+        <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg" controls
+            alt="">
     </header>
     <hr>
     <!-- About me -->
     <header>
         <h1>About Me</h1>
-    <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg"controls alt="">
-    <p>Hello! I'm a Passionate Web Developer and Quality Assurance Tester skilled in HTML, CSS, JavaScript, ReactJS, and Manual Testing.
+        <img src="https://t4.ftcdn.net/jpg/08/26/29/79/360_F_826297995_gHRLKyv4GIP3m59PPertUglA2bTG9eoc.jpg" controls
+            alt="">
+        <p>Hello! I'm a Passionate Web Developer and Quality Assurance Tester skilled in HTML, CSS, , and Manual
+            Testing.
 
-        I specialize in creating visually appealing and user-friendly web applications, while ensuring top-notch quality through thorough testing.
-        
-        Apart from coding, I'm a huge Virat Kohli fan and a dedicated cricket lover, following the game with passion and discipline—both on and off the field.
-        
-        I'm always learning and exploring new technologies to deliver dynamic, responsive, and high-performance websites.</p>
-</header>
-<hr>
-<!-- Project Zone -->
-<header><h1> My Project</h1></header>
-<center><img src="https://cdn3d.iconscout.com/3d/premium/thumb/html-3d-icon-png-download-7703547.png" alt=""></center>
-<center><a href=""><button>View Project</button></a></center>
+            I specialize in creating visually appealing and user-friendly web applications, while ensuring top-notch
+            quality through thorough testing.
 
-<br>
-<center><img src="https://cdn3d.iconscout.com/3d/premium/thumb/css-3d-icon-png-download-8588503.png"></center>
-<a href="file:///Users/Guest/Downloads/project_files-main/document.html">
-    <center><button>View Project</button></center>
-</a>
+            Apart from coding, I'm a huge Virat Kohli fan and a dedicated cricket lover, following the game with passion
+            and discipline—both on and off the field.
+
+            I'm always learning and exploring new technologies to deliver dynamic, responsive, and high-performance
+            websites.</p>
+    </header>
+    <hr>
+    <!-- Project Zone -->
+    <header>
+        <h1> My Project</h1>
+    </header>   
+    <!-- HTML Project -->
+    <div class="main-cointainer">
+    <section class="project">
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
+                alt="">
+                <br>
+    
+        <a href="file:///Users/Guest/Downloads/project_files-main/html-porject.html"><Button>View
+                    Project</Button></a>
+        <br>
+    </section>
+
+    <!-- CSS Project -->
+    <section class="project">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"height="290px">
+        <a href="file:///Users/Guest/Downloads/project_files-main/document.html">
+            <center><button>View Project</button></center>
+        </a>
+    </section>
+    </div>
+    <center>
+        <h1 style="color: orange;">Contact Me</h1>
+    </center>
+    <label style="color: orange;">Name</label>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Form</title>
+        <link rel="stylesheet" >
+        <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color:#2c3e50 ;
+
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .form-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        background-color: #1f2833;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-weight: lighter;
+    width: 100%;
+    }
+    
+    
+    textarea {
+        resize: vertical; /* Allow vertical resizing only */
+    }
+    
+    button {
+        background-color: lightblue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+      
+        font-size: 18px;
+        width: 100%;
+    
+    }
+    
+    button:hover {
+    transform: scale(1.05);
+    background-color: orange;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2 style="color: orange;">  Contact Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name" style="color: orange;">Name:</label>
+                    <input type="text" id="name" name="user_name"style="color: orange;" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"style="color: orange;">Email:</label>
+                    <input type="email" id="email" name="user_email" style="color: orange;"required>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="color: orange;">Message:</label>
+                    <textarea id="message" name="user_message" style="color: orange;" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </body>
-</html>
+    </html>
